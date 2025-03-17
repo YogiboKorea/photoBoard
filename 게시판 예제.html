@@ -81,7 +81,7 @@
 
         function loadComments() {
             console.log('Loading comments');
-            axios.get('http://localhost:8010/replay')
+            axios.get('https://port-0-photoboard-lzgmwhc4d9883c97.sel4.cloudtype.app/replay')
                 .then(response => {
                     console.log('Comments loaded:', response.data);
                     const commentsDiv = document.getElementById('comments');
