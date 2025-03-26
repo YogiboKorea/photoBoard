@@ -15,7 +15,7 @@ app.use(express.json());
 
 let db;
 
-const MONGO_URI = 'mongodb+srv://yogibo:yogibo@cluster0.vvkyawf.mongodb.net/?retryWrites=true&w=majority';
+const MONGO_URI = process.env.MONGODBURL
 
 // MongoDB 연결
 MongoClient.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
